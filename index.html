@@ -1,0 +1,73 @@
+<html>
+<body>
+    <div class="container">
+            <div class="box">
+                <div class="hours">
+                    <h1 id="hours"></h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="minutes">
+                    <h1 id="minutes"></h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="seconds">
+                    <h1 id="seconds"></h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="amorpm">
+                    <h1 id="amorpm"></h1>
+                </div>
+            </div>
+    </div>
+</body>
+  
+<style>
+  body {
+  margin-top: 10em;
+  background-color: #222831;
+  padding: 2em;
+}
+
+.container{
+ font-family: "Jost", sans-serif;
+  color: white;
+  width: 44em;
+  display: block;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #232931;
+  border-radius: 3em;
+  box-shadow: -2px -2px 8px 1px rgba(161, 161, 201, 0.2),
+    2px 2px 8px 1px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: row;
+}
+
+.box{
+    text-align: center;
+}
+
+.hours, .minutes, .seconds, .amorpm{
+        width: 4em;
+        height: 4em;
+        display: inline-block;
+        margin-right: 2em;
+        margin-left: 2em;
+        padding: 1em 1.5em;
+        box-shadow: -2px -2px 8px 1px rgba(161, 161, 201, 0.2),
+          2px 2px 8px 1px rgba(0, 0, 0, 0.8);
+        border-radius: 2em;
+        transition: background 0.2s ease;
+        cursor: pointer;
+}
+
+#hours, #minutes, #seconds, #amorpm{
+    font-size: 150%;
+    color: white;
+}
+
+</style>  
+</html>
